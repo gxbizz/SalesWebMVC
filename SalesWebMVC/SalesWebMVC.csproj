@@ -10,23 +10,27 @@
     <Compile Remove="Models\NovaPasta1\**" />
     <Compile Remove="Models\NovaPasta2\**" />
     <Compile Remove="Models\NovaPasta\**" />
+    <Compile Remove="Views\Departments\**" />
     <Content Remove="Models\NovaPasta1\**" />
     <Content Remove="Models\NovaPasta2\**" />
     <Content Remove="Models\NovaPasta\**" />
+    <Content Remove="Views\Departments\**" />
     <EmbeddedResource Remove="Models\NovaPasta1\**" />
     <EmbeddedResource Remove="Models\NovaPasta2\**" />
     <EmbeddedResource Remove="Models\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\Departments\**" />
     <None Remove="Models\NovaPasta1\**" />
     <None Remove="Models\NovaPasta2\**" />
     <None Remove="Models\NovaPasta\**" />
+    <None Remove="Views\Departments\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\DepartmentsController.cs" />
     <Compile Remove="Models\ErrorViewModel.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Models\" />
     <Folder Include="Pages\" />
     <Folder Include="wwwroot\css\" />
@@ -43,10 +47,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\Departments\Create.cshtml" />
+    <None Include="Views\Departments\Delete.cshtml" />
+    <None Include="Views\Departments\Details.cshtml" />
+    <None Include="Views\Departments\Edit.cshtml" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
   </ItemGroup>
 
